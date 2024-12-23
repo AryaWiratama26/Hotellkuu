@@ -2,6 +2,7 @@
 
 include 'connect.php';
 
+// Buat Register Account
 if(isset($_POST['signUp'])){
     $name = $_POST['name'];
     $email = $_POST['email'];
@@ -23,6 +24,8 @@ if(isset($_POST['signUp'])){
     }
 }
 
+
+// Buat login account
 if(isset($_POST['signIn'])){
     $email = $_POST['email'];
     $password = $_POST['password'];
